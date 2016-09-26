@@ -2,14 +2,54 @@
 <html>
 
 <head>
-<title>Jacob Erickson</title>
-<link href="style.css" type="text/css" rel="stylesheet">
+	<title>Jacob Erickson</title>
+	<meta charset="utf-8" />
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<meta name="viewport" content ="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
-University of Toronto - St. George
-Computer Science
-Class of 2019
+<body class="body">
+	<script>
+	function myFunciton() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+	}
+	</script>
+	<header class="mainheader">
+		<img src="img/logo.gif">
+		<nav><ul class="topnav" id="myTopnav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Github</a></li>
+			<li><a href="#">LinkedIn</a></li>
+			<li><a href="#">Contact</a></li>
+			<li class="icon">
+			<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+			</li>
+		</ul></nav>
+	</header>
+
+	<div class="mainContent">
+		<div class="content">
+			<article class="topcontent">
+				<header>
+					<h2><a href="#" title="First post">Post Title</a></h2>
+				</header>
+
+				<footer>
+					<p class="post info">Post content</p>
+				</footer>
+
+				<content>
+					<p>University of Toronto - St. George<br>Computer Science<br>Class of 2019</p>
+				</content>
+			</article>
+		</div>
+	</div>
+
 </body>
 
 </html>
