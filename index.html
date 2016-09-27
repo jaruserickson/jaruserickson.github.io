@@ -9,32 +9,21 @@
 	<meta name="viewport" content ="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="body">
-	<script>
-	function myFunciton() {
-		var x = document.getElementById("myTopnav");
-		if (x.className === "topnav") {
-			x.className += " responsive";
-		} else {
-			x.className = "topnav";
-		}
-	}
-	</script>
+<body>
 
-	<header class="mainheader">
-		<img src="img/logo.gif">
-		<nav><ul class="topnav" id="myTopnav">
-			<li><a href="http://www.jaruserickson.com/"><img src="img/home.png" alt="Home" title="Home" style="width:24px;height:24px;"/></a></li>
-			<li><a href="http://www.jaruserickson.com/about.html"><img src="img/about.png" alt="About" title="About" style="width:24px;height:24px;"/></a></li>
-			<li><a href="https://github.com/jaruserickson"><img src="img/github.png" alt="Github" title="Github" style="width:24px;height:24px;"/></a></li>
-			<li><a href="https://ca.linkedin.com/in/jacob-erickson-7414a3128"><img src="img/linkedin.png" title="LinkedIn" alt="LinkedIn" style="width:24px;height:24px;"/></a></li>
-			<li><a href="https://www.instagram.com/jaruserickson/"><img src="img/insta.png" alt="Photos" title="Photos" style="width:24px;height:24px;"/></a></li>
-			<li><a href="http://www.jaruserickson.com/contact.html/"><img src="img/contact.png" alt="Contact" title="Contact" style="width:24px;height:24px;"/></a></li>
-			<li class="icon">
-			<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-			</li>
-		</ul></nav>
-	</header>
+	<img src="img/jarus.png" style="width:191px;height:67px;margin-left:15px;margin-top:20px">
+
+	<ul class="topnav" id="myTopnav">
+		<li><a href="http://www.jaruserickson.com/"><img src="img/home.png" alt="Home" title="Home" style="width:24px;height:24px;"/></a></li>
+		<li><a href="http://www.jaruserickson.com/about.html"><img src="img/about.png" alt="About" title="About" style="width:24px;height:24px;"/></a></li>
+		<li><a href="https://github.com/jaruserickson"><img src="img/github.png" alt="Github" title="Github" style="width:24px;height:24px;"/></a></li>
+		<li><a href="https://ca.linkedin.com/in/jacob-erickson-7414a3128"><img src="img/linkedin.png" title="LinkedIn" alt="LinkedIn" style="width:24px;height:24px;"/></a></li>
+		<li><a href="https://www.instagram.com/jaruserickson/"><img src="img/insta.png" alt="Photos" title="Photos" style="width:24px;height:24px;"/></a></li>
+		<li><a href="http://www.jaruserickson.com/contact.html/"><img src="img/contact.png" alt="Contact" title="Contact" style="width:24px;height:24px;"/></a></li>
+		<li class="icon">
+		<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		</li>
+	</ul>
 	
 	<div class="mainContent">
 		<div class="content">
@@ -79,9 +68,16 @@
 		<img src="img/image-7.jpg" alt="yellow_flower"/>
 	</div>
 
-	<div class="header-cont">
-		<div></div>
-	</div>
+	<script>
+	function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+	}
+	</script>
 </body>
 
 </html>
