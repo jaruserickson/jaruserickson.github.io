@@ -8,13 +8,6 @@ body {
 	font-family: Helvetica;
 }
 
-#main {
-	width: 1000px;
-	height: 600px;
-	background: #ffab19;
-	margin: 25px auto;
-}
-
 ul.topnav {
 	list-style-type: none;
 	margin: 0;
@@ -39,7 +32,7 @@ ul.topnav li a:hover {background-color: #555;}
 
 ul.topnav li.icon {display: none;}
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:500px) {
 	ul.topnav li:not(:first-child) {display: none;}
 	ul.topnav li.icon {
 		float: right;
@@ -47,7 +40,7 @@ ul.topnav li.icon {display: none;}
 	}
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:500px) {
 	ul.topnav.responsive {posiiton: relative;}
 	ul.topnav.responsive li.icon {
 		position: absolute;
@@ -64,14 +57,25 @@ ul.topnav li.icon {display: none;}
 	}
 }
 
+#logo {
+	position:relative;
+	z-index:950;
+}
+
 #container {
   position:relative;
+  opacity:0.5;
   height:1080px;
   width:1920px;
 }
+
 #container img {
   position:absolute;
+  opacity:0.5;
   left:0;
+  height:100%;
+  width:100%;
+  z-index:900;
 }
 
 @-webkit-keyframes imgFade {
