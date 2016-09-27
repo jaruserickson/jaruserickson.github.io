@@ -2,6 +2,11 @@ body {
 	background: #d4d4d4;
 	text-align: center;
 }
+
+* {
+	font-family: Helvetica;
+}
+
 #main {
 	width: 1000px;
 	height: 600px;
