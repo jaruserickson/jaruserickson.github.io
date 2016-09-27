@@ -20,7 +20,7 @@ ul.topnav li {float: left;}
 
 ul.topnav li a{
 	display: inline-block;
-	color: #f2f2f2;
+	color: #666666;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -58,6 +58,11 @@ ul.topnav li.icon {display: none;}
 }
 
 #logo {
+	position:relative;
+	z-index:950;
+}
+
+#contact{
 	position:relative;
 	z-index:950;
 }
