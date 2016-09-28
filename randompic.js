@@ -7,7 +7,14 @@ function randPicture() {
      document.getElementById("return").src = lib[randomNum];
      if (randomNum != 12) {
      	document.getElementById("return2").src = lib[randomNum+1];
+     	if (randomNum != 0) {
+     		document.getElementById("return3").src = lib[randomNum-1];
+     	} else {
+     		document.getElementById("return3").src = lib[randomNum+6];
+     	}
      } else {
      	document.getElementById("return2").src = lib[randomNum-5];
+     	document.getElementById("return3").src = lib[randomNum-7];
      }
+
  }
