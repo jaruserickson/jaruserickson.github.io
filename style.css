@@ -24,14 +24,13 @@ ul.topnav {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color #333;
 }
 
 ul.topnav li {float: left;}
 
 ul.topnav li a{
 	display: inline-block;
-	color: #666666;
+	color: #fff;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -50,6 +49,7 @@ ul.topnav li.icon {display: none;}
 		top:0px;
 		right:0px;
 		display: inline-block;
+		color:#fff;
 	}
 }
 
