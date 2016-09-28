@@ -46,7 +46,9 @@ ul.topnav li.icon {display: none;}
 @media screen and (max-width:500px) {
 	ul.topnav li:not(:first-child) {display: none;}
 	ul.topnav li.icon {
-		float: right;
+		position:fixed;
+		top:0px;
+		right:0px;
 		display: inline-block;
 	}
 }
@@ -54,12 +56,12 @@ ul.topnav li.icon {display: none;}
 @media screen and (max-width:500px) {
 	ul.topnav.responsive {posiiton: relative;}
 	ul.topnav.responsive li.icon {
-		position: absolute;
-		right: 0;
-		top: 0;
+		position:fixed;
+		right:0px;
+		top:0px;
 	}
 	ul.topnav.responsive li {
-		float: none;
+		float:none;
 		display:inline;
 	}
 	ul.topnav.responsive li a{
