@@ -2,12 +2,12 @@ body {
 	margin: 0;
 	background: #000;
 	text-align: left;
+	overflow: hidden;
 }
 
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    overflow-y: visible;
 }
 
 * {
