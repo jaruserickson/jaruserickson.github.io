@@ -64,9 +64,24 @@
   		} else if (state == 'complete') {
       		setTimeout(function(){
          		document.getElementById('interactive');
-         		document.getElementById('load').style.visibility="hidden";
+         		fade(document.getElementById('load'));
          		document.getElementById('contents').style.visibility="visible";},1000);
   		}
+	}
+	</script>
+
+	<script>
+	function fade(element) {
+    	var op = 1;
+    	var timer = setInterval(function () {
+        	if (op <= 0){
+            	clearInterval(timer);
+            	element.style.display = 'none';
+        	}
+        	element.style.opacity = op;
+        	element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        	op -= op * 0.1;
+    	}, 50);
 	}
 	</script>
 </body>
