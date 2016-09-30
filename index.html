@@ -11,7 +11,8 @@
 </head>
 
 <body>
-
+	<div id="load"></div>
+	<div id="contents">
 	<div class="header">
 	<ul class="topnav" id="myTopnav">
 		<li><a href="#"><img src="img/home.png" alt="Home" title="Home" style="width:24px;height:24px;"/></a></li>
@@ -43,6 +44,7 @@
 	<center><img src="img_trans.gif" id="return3" style="margin-top:-204px;width:auto;height:100%;opacity:0.9;margin-bottom:-30px"></center>
 
 	<center><small style="opacity:0.6;color:#fff;">© Jacob Erickson. All rights reserved.</small></center>
+	</div>
 
 	<script>
 	function compact() {
@@ -52,6 +54,19 @@
 		} else {
 			x.className = "topnav";
 		}
+	}
+	</script>
+	<script>
+	document.onreadystatechange = function () {
+  		var state = document.readyState
+  		if (state == 'interactive') {
+       		document.getElementById('contents').style.visibility="hidden";
+  		} else if (state == 'complete') {
+      		setTimeout(function(){
+         		document.getElementById('interactive');
+         		document.getElementById('load').style.visibility="hidden";
+         		document.getElementById('contents').style.visibility="visible";},1000);
+  		}
 	}
 	</script>
 </body>
