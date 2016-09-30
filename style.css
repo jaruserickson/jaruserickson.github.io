@@ -22,8 +22,9 @@ html, body {
 	height: 100%;
 	z-index: 1050;
 	opacity: 0.9;
-	background: url(img/poi.gif) 50% 50% no-repeat #000;
+	background: url(img/poi.gif) 50% 50% repeat #202020;
 }
+
 .header {
 	position:fixed;
 	top:0px;
