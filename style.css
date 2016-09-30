@@ -14,6 +14,16 @@ html, body {
 	font-family: Helvetica;
 }
 
+#load {
+	position:fixed;
+	left:0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1050;
+	opacity: 0.9;
+	background: url(img/poi.gif) 50% 50% no-repeat #000;
+}
 .header {
 	position:fixed;
 	top:0px;
