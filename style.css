@@ -28,7 +28,7 @@ html, body {
 .header {
 	position:fixed;
 	top:0px;
-	z-index:1100;
+	z-index:1150;
 }
 
 ul.topnav {
@@ -83,10 +83,10 @@ ul.topnav li.icon {display: none;}
 
 #logo {
 	position:relative;
-	z-index:950;
+	z-index:1100;
 }
 
 #contact{
 	position:relative;
-	z-index:950;
+	z-index:1100;
 }
