@@ -28,7 +28,7 @@ html, body {
 .header {
 	position:fixed;
 	top:0px;
-	z-index:1000;
+	z-index:1100;
 }
 
 ul.topnav {
