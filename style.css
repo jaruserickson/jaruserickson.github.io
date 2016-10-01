@@ -86,6 +86,12 @@ ul.topnav li.icon {display: none;}
 	z-index:1100;
 }
 
+#contact a{
+	transition: 0.3s;
+}
+
+#contact a:hover {opacity:0.5;}
+
 #contact{
 	position:relative;
 	z-index:1100;
