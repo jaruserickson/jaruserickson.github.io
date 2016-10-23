@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Jacob Erickson</title>
+	<link rel='shortcut icon' href='favicon.png' type='image/png'/ >
+	<meta charset="utf-8" />
+	<link href="style2.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="load"></div>
+
+	<div class="header">
+	<ul class="topnav" id="myTopnav">
+		<li><a href="#"><img src="img/home.png" alt="Home" title="Home" style="width:24px;height:24px;"/></a></li>
+		<li><a href="pdf/jacoberickson_resume2016_17.pdf"><img src="img/about.png" alt="Resume" title="Resume" style="width:24px;height:24px;"/></a></li>
+		<li><a href="https://github.com/jaruserickson"><img src="img/github.png" alt="Github" title="Github" style="width:24px;height:24px;"/></a></li>
+		<li><a href="https://ca.linkedin.com/in/jacob-erickson-7414a3128"><img src="img/linkedin.png" title="LinkedIn" alt="LinkedIn" style="width:24px;height:24px;"/></a></li>
+		<li><a href="https://www.instagram.com/jaruserickson/"><img src="img/insta.png" alt="Photos" title="Photos" style="width:24px;height:24px;"/></a></li>
+		<li class="icon">
+		<a href="javascript:void(0);" onclick="compact()">&#9776;</a>
+		</li>
+	</ul>
+	</div>
+
+	<div class="mhead">
+	<ul class="midnav" id="myMidnav">
+		<li><a href="pdf/jacoberickson_resume2016_17.pdf"><img src="img/about.png" alt="Resume" title="Resume" style="width:12px;height:12px;"/></a></li>
+		<li><a href="https://github.com/jaruserickson"><img src="img/github.png" alt="Github" title="Github" style="width:12px;height:12px;"/></a></li>
+		<li><a href="https://ca.linkedin.com/in/jacob-erickson-7414a3128"><img src="img/linkedin.png" title="LinkedIn" alt="LinkedIn" style="width:12px;height:12px;"/></a></li>
+		<li><a href="https://www.instagram.com/jaruserickson/"><img src="img/insta.png" alt="Photos" title="Photos" style="width:12px;height:12px;"/></a></li>
+	</ul>
+	</div>
+
+ 	<div class="main">
+ 		<center><img src="img/hd/mainpic.png" alt="jacob erickson" style="width:100%;height:100%"></center>
+	</div>
+
+
+	<script>
+	function compact() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+	}
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<script>
+		$(document).scroll(function() {
+  			var y = $(this).scrollTop();
+  			var x = $(' .main').height()/2;
+  			if (y > x) {
+    			$(' .header').fadeIn();
+  			} else {
+    			$(' .header').fadeOut();
+  			}
+		});
+	</script>
+
+	<script>
+	document.onreadystatechange = function () {
+  		var state = document.readyState
+  		if (state == 'interactive') {
+       		//do nothing
+  		} else if (state == 'complete') {
+      		setTimeout(function(){
+         		document.getElementById('interactive');
+         		fade(document.getElementById('load'));
+         		document.getElementById('contents').style.visibility="visible";},1000);
+  		}
+	}
+	</script>
+
+	<script>
+	function fade(element) {
+    	var op = 1;
+    	var timer = setInterval(function () {
+        	if (op <= 0){
+            	clearInterval(timer);
+            	element.style.display = 'none';
+        	}
+        	element.style.opacity = op;
+        	element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        	op -= op * 0.1;
+    	}, 50);
+	}
+	</script>
+
+</body>
+
+</html>
