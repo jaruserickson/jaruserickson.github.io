@@ -26,7 +26,7 @@
 	<!--//otherwise 24px
 	//800px 12px
 	//500px 6px-->
-	<div class="mhead">
+	<div class="mhead" id = "mheadid">
 	<ul class="midnav" id="myMidnav">
 		<li><a href="pdf/jacoberickson_resume2016_17.pdf"><img src="img/about.png" alt="Resume" title="Resume" style="width:12px;height:auto;"/></a></li>
 		<li><a href="https://github.com/jaruserickson"><img src="img/github.png" alt="Github" title="Github" style="width:12px;height:auto;"/></a></li>
@@ -39,6 +39,11 @@
  		<center><img src="img/hd/mainpic.png" alt="jacob erickson" style="width:100%;height:100%"></center>
 	</div>
 
+	<script>
+	if (screen.width <= 800){
+		window.location = "http:/jaruserickson.com/mobile.html";
+	}
+	</script>
 
 	<script>
 	function compact() {
