@@ -2,7 +2,6 @@ body {
 	margin: 0;
 	background: url(img/hd/bg.jpg) 50% 50% no-repeat #000;
 	text-align: left;
-	height:3020px;
 	overflow-x: hidden;
 }
 
@@ -26,7 +25,7 @@ body {
 	position:absolute;
 	z-index:1000;
 	margin-left:62%;
-	margin-top:29%;
+	margin-top:30%;
 }
 
 #load {
