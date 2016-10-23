@@ -18,13 +18,15 @@ body {
 }
 
 .main{
-	position:absolute;
+	position:relative;
 	z-index:850;
 }
 
 .mhead{
-	position:relative;
-	z-index:1200;
+	position:absolute;
+	z-index:1000;
+	margin-left:62%;
+	margin-top:29%;
 }
 
 #load {

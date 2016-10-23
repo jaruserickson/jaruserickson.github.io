@@ -23,13 +23,15 @@
 		</li>
 	</ul>
 	</div>
-
+	<!--//otherwise 24px
+	//800px 12px
+	//500px 6px-->
 	<div class="mhead">
 	<ul class="midnav" id="myMidnav">
-		<li><a href="pdf/jacoberickson_resume2016_17.pdf"><img src="img/about.png" alt="Resume" title="Resume" style="width:12px;height:12px;"/></a></li>
-		<li><a href="https://github.com/jaruserickson"><img src="img/github.png" alt="Github" title="Github" style="width:12px;height:12px;"/></a></li>
-		<li><a href="https://ca.linkedin.com/in/jacob-erickson-7414a3128"><img src="img/linkedin.png" title="LinkedIn" alt="LinkedIn" style="width:12px;height:12px;"/></a></li>
-		<li><a href="https://www.instagram.com/jaruserickson/"><img src="img/insta.png" alt="Photos" title="Photos" style="width:12px;height:12px;"/></a></li>
+		<li><a href="pdf/jacoberickson_resume2016_17.pdf"><img src="img/about.png" alt="Resume" title="Resume" style="width:12px;height:auto;"/></a></li>
+		<li><a href="https://github.com/jaruserickson"><img src="img/github.png" alt="Github" title="Github" style="width:12px;height:auto;"/></a></li>
+		<li><a href="https://ca.linkedin.com/in/jacob-erickson-7414a3128"><img src="img/linkedin.png" title="LinkedIn" alt="LinkedIn" style="width:12px;height:auto;"/></a></li>
+		<li><a href="https://www.instagram.com/jaruserickson/"><img src="img/insta.png" alt="Photos" title="Photos" style="width:12px;height:auto;"/></a></li>
 	</ul>
 	</div>
 
@@ -81,7 +83,7 @@
 	function fade(element) {
     	var op = 1;
     	var timer = setInterval(function () {
-        	if (op <= 0){
+        	if (op <= 0.005){
             	clearInterval(timer);
             	element.style.display = 'none';
         	}
