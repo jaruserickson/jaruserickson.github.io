@@ -1,0 +1,85 @@
+body{
+	font-family:'Open Sans', sans-serif;
+	background: url(img/hd/exbg.png) no-repeat #666;
+	background-blend-mode:difference;
+}
+
+#tle{
+	font-family: 'Unica One', cursive;
+	color:#777;
+	padding-top:1em;
+	font-size:45px;
+	mix-blend-mode: screen;
+}
+
+#out{
+	display:initial-table;
+	margin-top:-205px;
+	margin-left:56%;
+	color:black;
+}
+
+#block{
+	height: 210px;
+	width: 7px;
+	background-color: #0074d9;
+	margin-top:-205px;
+	margin-left:50%;
+}
+
+#logo{
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-top:-120px;
+	margin-left:10px;
+	width:220px;
+	height:auto;
+	mix-blend-mode:multiply;
+}
+
+#addc{
+	margin-left:20px;
+}
+
+#submit{
+	margin-left:360px;
+}
+
+#all{
+	height: 230px;
+    width: 700px;
+    background: #f2f2f2;
+    position:relative;
+    left:31%;
+    border-radius:5px;
+    margin-top: 110px
+}
+
+form{
+	padding-top:13px;
+	padding-left:20px;
+}
+
+input[type=text], select {
+	width:40%;
+	padding: 8px 10px;
+	margin: 8px 0;
+	border:1px solid #ccc;
+	border-radius: 4px;
+	box-sizing:border-box;
+}
+
+button:hover{
+	background-color:#0068c4;
+}
+
+button{
+	background-color:#0074d9;
+	color:white;
+	padding: 8px 10px;
+	margin: 8px 0;
+	border:none;
+	border-radius: 4px;
+	cursor: pointer;
+}

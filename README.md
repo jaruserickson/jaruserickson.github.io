@@ -3,4 +3,4 @@
 
 ##Current Features
 - mobile/desktop compatability
-- _examplanner_ main page
+- _examplanner_ + utsg main page

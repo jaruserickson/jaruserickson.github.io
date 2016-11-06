@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UTSG Exam Planner</title>
+	<link rel='shortcut icon' href='img/uoft.png' type='image/png'/ >
+	<link href="utsg_style.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Unica+One" rel="stylesheet">
+</head>
+<body>
+	<center id="tle">
+		<h1>Exam Planner</h1>
+		<h4 style="margin-top:-65px">winter '16</h4>
+	</center>
+
+<div id="all">
+	<form name="nameform" id="nameform">
+		Last Name:<br><input type="text" id="name">  
+	</form>
+	<form name="form2" id="form2">
+	    Course Code:<br><input type="text" id="classes">
+	</form>
+
+	<button id="addc" onclick="getData()">Add Course</button>
+	<button id="submit" onclick="">Find Exams</button>
+
+	<div id="output">
+		<div id="block"></div>
+		<p id="out"></p>
+	</div>
+</div>
+<!--<img id="logo" src="img/uoft_big.png"/>-->
+	
+	<script>
+	this.count = 0; //count # of classes
+	function getData(){
+		var x = document.getElementById("nameform");
+		var y = document.getElementById("form2");
+		var name = x.elements[0].value + "<br>";
+		if (y.elements[0].value != "" && this.count < 6){ //cant have more than 6 classes
+			var text = y.elements[0].value + "<br>";
+			document.getElementById("out").innerHTML += text;
+			document.getElementById("form2").reset();
+			count += 1;
+		}else if (this.count >= 6){
+			alert("You cant have more than 6 classes!");
+		}else{
+			alert("You cant have an exam for a blank class!");
+		}
+	}
+	</script>
+</body>
+</html>
