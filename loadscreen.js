@@ -13,7 +13,7 @@ document.onreadystatechange = function () {
 function fade(element) {
    	var op = 1;
    	var timer = setInterval(function () {
-       	if (op <= 0.01){
+       	if (op <= 0.1){
            	clearInterval(timer);
            	element.style.display = 'none';
        	}
