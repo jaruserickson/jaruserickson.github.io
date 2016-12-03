@@ -6,7 +6,7 @@ document.onreadystatechange = function () {
      		setTimeout(function(){
         		document.getElementById('interactive');
         		$("#load").fadeOut();
-            $("#profile").addClass("animated rotateInDownLeft");
+            $("#profile").addClass("animated zoomIn");
             $("#links").addClass("animated fadeInUp");
         		},1000);
  		}
