@@ -20,7 +20,7 @@ body{
 	min-height: 100%;
   	min-height: 100vh;
 	height: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -34,7 +34,7 @@ content{
 .midnav{
 	display:flex;
 	list-style-type:none;
-	margin-left:-12px;
+	margin-left:-9px;
 }
 
 ul.midnav li a{
@@ -45,7 +45,7 @@ ul.midnav li a{
 ul.midnav li a:hover{opacity:0.5;}
 
 #content h2{
-	margin-left: 60px;
+	margin-left: 68px;
 }
 
 #load {
@@ -76,6 +76,7 @@ ul.midnav li a:hover{opacity:0.5;}
 }
 
 #profile{
+	margin-top: 10px;
 	width:300px;
 	height:auto;
 }
