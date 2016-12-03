@@ -39,7 +39,7 @@ body{
     display: -ms-flexbox;
     display: flex;
 	list-style-type:none;
-	margin-left:-43px;
+	margin-left:-30px;
 }
 
 ul.midnav li a{
@@ -83,6 +83,43 @@ ul.midnav li a:hover{opacity:0.5;}
 	width:100%;
 	height:500px;
 	z-index:900;
+}
+
+#contact{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	flex-shrink: 0;
+	position:relative;
+}
+#mail{
+	margin-top:-180px;
+	margin-bottom:110px;
+}
+
+div#contact a{
+	transition:0.3s;
+}
+
+div#contact a:hover{opacity:0.5;}
+
+#mail img{
+	width:48px;
+	height:auto;
+	padding: 10px 10px;
 }
 
 #profile{
