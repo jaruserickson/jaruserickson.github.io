@@ -17,8 +17,7 @@ body{
     justify-content: center;
     -webkit-flex-direction: column;
     flex-direction: column;
-	min-height: 100%;
-  	min-height: 100vh;
+    flex-shrink: 0;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
