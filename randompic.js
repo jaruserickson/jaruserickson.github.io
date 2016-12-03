@@ -1,20 +1,8 @@
 window.onload = randPicture;
 
-var lib = new Array("img/hd/image-1.jpg","img/hd/image-2.jpg","img/hd/image-3.jpg","img/hd/image-4.jpg","img/hd/image-5.jpg","img/hd/image-6.jpg","img/hd/image-7.jpg","img/hd/image-8.jpg","img/hd/image-9.jpg","img/hd/image-10.jpg","img/hd/image-11.jpg","img/hd/image-12.jpg","img/hd/image-13.jpg");
+var profile = new Array("img/waterfall.png", "img/mountain.png", "img/waterski.png");
 
 function randPicture() {
-     var randomNum = Math.floor(Math.random() * lib.length);
-     document.getElementById("return").src = lib[randomNum];
-     if (randomNum != 12) {
-     	document.getElementById("return2").src = lib[randomNum+1];
-     	if (randomNum != 0) {
-     		document.getElementById("return3").src = lib[randomNum-1];
-     	} else {
-     		document.getElementById("return3").src = lib[randomNum+6];
-     	}
-     } else {
-     	document.getElementById("return2").src = lib[randomNum-5];
-     	document.getElementById("return3").src = lib[randomNum-7];
-     }
-
+     randomNum = Math.floor(Math.random() * profile.length);
+     document.getElementById("profile").src = profile[randomNum];
  }
