@@ -39,14 +39,20 @@
 
 	<script>
 		$("#contact").hover(function (){
-			$('#profile').fadeTo(500, 0.2);
+			$('#profile').stop().fadeTo(500, 0.2);
 			$("#mail").removeClass("zoomOut");
 			$("#mail").addClass("zoomIn");
 		}, function (){
-			$('#profile').fadeTo(500, 1);
+			$('#profile').stop().fadeTo(500, 1);
 			$("#mail").removeClass("zoomIn");
 			$("#mail").addClass("zoomOut");
 		});
+
+		$("#mail").hover(function (){
+			$("#mail").stop().fadeTo(300, 0.5);
+		}, function(){
+			$("#mail").stop().fadeTo(300, 1);
+		})
 	</script>
 </body>
 </html>

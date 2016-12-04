@@ -110,12 +110,6 @@ ul.midnav li a:hover{opacity:0.5;}
 	margin-bottom:110px;
 }
 
-div#contact a{
-	transition:0.3s;
-}
-
-div#contact a:hover{opacity:0.5;}
-
 #mail img{
 	width:48px;
 	height:auto;
