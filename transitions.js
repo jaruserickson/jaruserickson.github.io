@@ -13,6 +13,7 @@ $(document).on('click', function(e) { //on document click
         $("#blurb").addClass("zoomIn");
 
         $('#profile').stop().fadeTo(500, 1);
+        $("#person").stop().fadeTo(300, 0);
         $('#contact').removeClass("flipInY");
         $('#contact').addClass("flipOutY");
         flag = false;
@@ -30,6 +31,7 @@ $(document).on('click', function(e) { //on document click
 $("#contact").hover(function (){ //animation for hover on photo
 	if (flag){
 		$('#profile').stop().fadeTo(500, 0.2);
+		$("#person").stop().fadeTo(300, 1);
 		$("#person").removeClass("zoomOut");
 		$("#person").addClass("zoomIn");
 	}
