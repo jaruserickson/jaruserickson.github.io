@@ -17,6 +17,11 @@
 </head>
 
 <body>
+	<!-- TODO
+		- fix safari jquery for picture hover
+		- change hover icon to about with a popout
+		- mail icon at bottom of about
+	-->
 	<div id="load"></div>
 	<div id="content">
 		<div id="contact">
@@ -26,16 +31,26 @@
 		<center id="links">
 			<h1>JACOB ERICKSON</h1>
 			<ul class="midnav" id="myMidnav">
-					<li><a target="_blank" href="pdf/jacoberickson_resume2016_17.pdf"><img src="img/about.png" alt="Resume" title="Resume" style="width:24px;height:auto;"/></a></li>
-					<li><a target="_blank" href="https://github.com/jaruserickson"><img src="img/github.png" alt="Github" title="Github" style="width:24px;height:auto;"/></a></li>
-					<li><a target="_blank" href="https://www.linkedin.com/in/jaruserickson"><img src="img/linkedin.png" title="LinkedIn" alt="LinkedIn" style="width:24px;height:auto;"/></a></li>
-					<li><a target="_blank" href="https://www.instagram.com/jaruserickson/"><img src="img/insta.png" alt="Photos" title="Photos" style="width:24px;height:auto;"/></a></li>
+					<li><a target="_blank" href="pdf/jacoberickson_resume2016_17.pdf" ontouchend="this.onlick=cssFix"><img src="img/about.png" alt="Resume" title="Resume" style="width:24px;height:auto;"/></a></li>
+					<li><a target="_blank" href="https://github.com/jaruserickson" ontouchend="this.onlick=cssFix"><img src="img/github.png" alt="Github" title="Github" style="width:24px;height:auto;"/></a></li>
+					<li><a target="_blank" href="https://www.linkedin.com/in/jaruserickson" ontouchend="this.onlick=cssFix"><img src="img/linkedin.png" title="LinkedIn" alt="LinkedIn" style="width:24px;height:auto;"/></a></li>
+					<li><a target="_blank" href="https://www.instagram.com/jaruserickson/" ontouchend="this.onlick=cssFix"><img src="img/insta.png" alt="Photos" title="Photos" style="width:24px;height:auto;"/></a></li>
 			</ul>
 		</center>
 	</div>
 	<div id="background"></div>
 
 	<script src="loadscreen.js"></script>
+
+	<script>
+		function cssFix(){
+			var e = this;
+			var parent = e.parentNode;
+			var next = e.nextSibling;
+			par.removeChild(e);
+			setTimeout(function (){parent.insertBefore(e, next);}, 0);
+		}
+	</script>
 
 	<script>
 		$("#contact").hover(function (){
