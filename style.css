@@ -105,12 +105,36 @@ ul.midnav li a:hover{opacity:0.5;}
 	flex-shrink: 0;
 	position:relative;
 }
-#mail{
-	margin-top:-180px;
-	margin-bottom:110px;
+
+.about{
+	font-family: sans-serif;
+	position:fixed;
+	margin-left:-171px;
+	margin-top:-317px;
+	width:310px;
+	height:290px;
+	background-color:rgba(0,0,0,0.6);
+	border-radius:15px;
+	z-index:1250;
+	color:white;
+	font-size: 12px;
+	padding: 15px 17px;
+
+	/* text centering
+	text-align: center;
+	vertical-align: middle;
+	line-height:420px;
+	*/
 }
 
-#mail img{
+#person{
+	margin-top:-180px;
+	margin-bottom:110px;
+	z-index:1150;
+	cursor: auto;
+}
+
+#person img{
 	width:48px;
 	height:auto;
 	padding: 10px 10px;
