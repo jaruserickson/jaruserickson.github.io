@@ -1,3 +1,4 @@
+$("#content").hide();
 document.onreadystatechange = function () {
  		var state = document.readyState
  		if (state == 'interactive') {
@@ -5,9 +6,10 @@ document.onreadystatechange = function () {
  		} else if (state == 'complete') {
      		setTimeout(function(){
         		document.getElementById('interactive');
+        		$("#content").show();
         		$("#load").fadeOut();
-            $("#profile").addClass("animated zoomIn");
-            $("#links").addClass("animated fadeInUp");
+            	$("#profile").addClass("animated zoomIn");
+            	$("#links").addClass("animated fadeInUp");
         		},1000);
  		}
 }
