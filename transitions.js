@@ -1,5 +1,5 @@
 //BUG REPORT
-	// - safari is SO BROKEN
+	// - safari is SO BROKEN :(
 	// - get rid of cursor pointer when blurb is up ??
 		
 var flag = true;
@@ -16,7 +16,7 @@ $(document).on('click', function(e) { //on document click
         $('#contact').removeClass("flipInY");
         $('#contact').addClass("flipOutY");
         flag = false;
-    }else {
+    }else{
     	$("#blurb").hide();
 		$('#contact').removeClass("flipOutY");
     	$('#contact').addClass("flipInY");
