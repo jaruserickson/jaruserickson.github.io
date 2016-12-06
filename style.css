@@ -112,7 +112,7 @@ ul.midnav li a:hover{opacity:0.5;}
 	margin-left:-170px;
 	margin-top:-317px;
 	width:310px;
-	height:290px;
+	height:auto;
 	background-color:rgba(0,0,0,0.6);
 	border-radius:15px;
 	z-index:1250;
