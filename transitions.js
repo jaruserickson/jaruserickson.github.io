@@ -1,17 +1,12 @@
-//BUG REPORT
-	// - safari is SO BROKEN :(
-	// - get rid of cursor pointer when blurb is up ??
-		
-//solution
-	//i have css transitions and jquery running in tandem
-	//run them jquery -> css?
+//bug report
+	//just css3's transform perspective blurring children problem
+
 var flag = true; //if flag is up then the about blurb is down
 $("#blurb").hide(); //so interaction will not be broken
 
-//this jquery is so messy
-$(document).on('click', function(e) { //on document click
+//this jquery is so messy but hey, atleast i didnt just use html5up
+$(document).on('click touchstart', function(e) { //on document click
     if ($(e.target).closest('#person').length) {
-    	console.log("click on");
     	$('#me').stop().fadeTo(500, 1);
         $("#person").stop().fadeTo(300, 0);
 		$("#person").css("opacity", "0");
@@ -25,7 +20,6 @@ $(document).on('click', function(e) { //on document click
     	}, 300);
         flag = false;
     }else{
-    	console.log("click off");
 		$('#contact').removeClass("flipOutX");
     	$('#contact').addClass("flipInX");
 
@@ -47,7 +41,6 @@ $(document).on('click', function(e) { //on document click
 //so so messy
 $("#contact").hover(function (){ //animation for hover on photo
 	if (flag){
-		console.log("hover on");
 		$('#me').stop().fadeTo(500, 0.2);
 		$("#person").stop().fadeTo(300, 1);
 		$("#person").css("opacity", "1");
@@ -57,7 +50,6 @@ $("#contact").hover(function (){ //animation for hover on photo
 	}
 }, function (){
 	if (flag){
-		console.log("hover off");
 		$('#me').stop().fadeTo(500, 1);
 		$("#person").stop().fadeTo(300, 0);
 		$("#person").css("opacity", "0");

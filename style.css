@@ -109,8 +109,8 @@ ul.midnav li a:hover{opacity:0.5;}
 .about{
 	font-family: sans-serif;
 	position:fixed;
-	margin-left:-173px;
-	margin-top:-317px;
+	margin-left:-172px;
+	margin-top:-330px;
 	width:310px;
 	height:auto;
 	background-color:rgba(0,0,0,0.6);
@@ -119,12 +119,6 @@ ul.midnav li a:hover{opacity:0.5;}
 	color:white;
 	font-size: 12px;
 	padding: 15px 17px;
-
-	/* text centering
-	text-align: center;
-	vertical-align: middle;
-	line-height:420px;
-	*/
 }
 
 #person{
