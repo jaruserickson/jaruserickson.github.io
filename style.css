@@ -109,7 +109,7 @@ ul.midnav li a:hover{opacity:0.5;}
 .about{
 	font-family: sans-serif;
 	position:fixed;
-	margin-left:-170px;
+	margin-left:-173px;
 	margin-top:-317px;
 	width:310px;
 	height:auto;
@@ -138,11 +138,21 @@ ul.midnav li a:hover{opacity:0.5;}
 	width:48px;
 	height:auto;
 	padding: 10px 10px;
+	transition: 0.3s;
 }
+
+#person img:hover{ opacity:0.5; }
+
+/*#contact:hover #profile{ opacity:0.2; }
+
+#contact, #profile img{
+	transition: 0.3s;
+}*/
 
 #profile{
 	display:flex;
 	padding-top:50px;
 	width:300px;
 	height:auto;
+	z-index:1000;
 }
