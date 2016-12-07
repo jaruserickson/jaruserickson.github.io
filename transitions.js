@@ -29,15 +29,18 @@ $(document).on('click', function(e) { //on document click
 		$('#contact').removeClass("flipOutX");
     	$('#contact').addClass("flipInX");
 
+    	if (!flag) {
     	$("#person").removeClass("zoomIn");
     	$("#person").addClass("zoomOut");
+   		}
 
     	$("#blurb").removeClass("zoomIn");
         $('#blurb').addClass("zoomOut");
-        setTimeout(function() {
-        $("#blurb").hide();
+
+        setTimeout(function() { //need to wait for other things to finish.
+        	$("#blurb").hide();
+        	flag = true;
     	}, 300);
-        flag = true;
     }
 });
 
@@ -58,7 +61,7 @@ $("#contact").hover(function (){ //animation for hover on photo
 		$('#me').stop().fadeTo(500, 1);
 		$("#person").stop().fadeTo(300, 0);
 		$("#person").css("opacity", "0");
-		
+
 		$("#person").removeClass("zoomIn");
 		$("#person").addClass("zoomOut");
 	}
