@@ -1,19 +1,24 @@
 //bug report
-	//just css3's transform perspective blurring children problem
+	//just css3's transform perspective blurring children problem in saf
 
 var flag = true; //if flag is up then the about blurb is down
 $("#blurb").hide(); //so interaction will not be broken
 
-//this jquery is so messy but hey, atleast i didnt just use html5up
+//for some reason this all works in safari when i set opacity after fading
+
+//this jquery is so messy
 $(document).on('click touchstart', function(e) { //on document click
     if ($(e.target).closest('#person').length) {
     	$('#me').stop().fadeTo(500, 1);
         $("#person").stop().fadeTo(300, 0);
 		$("#person").css("opacity", "0");
+		$("#mail").stop().fadeTo(300, 0);
+		$("#mail").css("opacity", "0");
+
         $('#contact').removeClass("flipInX");
         $('#contact').addClass("flipOutX");
 
-    	setTimeout(function (){
+    	setTimeout(function (){ //delay so there won't be z-clipping
     		$("#blurb").show();
     		$("#blurb").removeClass("zoomOut");
         	$("#blurb").addClass("zoomIn");
@@ -23,9 +28,11 @@ $(document).on('click touchstart', function(e) { //on document click
 		$('#contact').removeClass("flipOutX");
     	$('#contact').addClass("flipInX");
 
-    	if (!flag) {
+    	if (!flag) { //resetting animations after click
     	$("#person").removeClass("zoomIn");
     	$("#person").addClass("zoomOut");
+    	$("#mail").removeClass("zoomIn");
+    	$("#mail").addClass("zoomOut");
    		}
 
     	$("#blurb").removeClass("zoomIn");
@@ -44,7 +51,11 @@ $("#contact").hover(function (){ //animation for hover on photo
 		$('#me').stop().fadeTo(500, 0.2);
 		$("#person").stop().fadeTo(300, 1);
 		$("#person").css("opacity", "1");
+		$("#mail").stop().fadeTo(300, 1);
+		$("#mail").css("opacity", "1");
 
+		$("#mail").removeClass("zoomOut");
+		$("#mail").addClass("zoomIn");
 		$("#person").removeClass("zoomOut");
 		$("#person").addClass("zoomIn");
 	}
@@ -53,7 +64,11 @@ $("#contact").hover(function (){ //animation for hover on photo
 		$('#me').stop().fadeTo(500, 1);
 		$("#person").stop().fadeTo(300, 0);
 		$("#person").css("opacity", "0");
+		$("#mail").stop().fadeTo(300, 0);
+		$("#mail").css("opacity", "0");
 
+		$("#mail").removeClass("zoomIn");
+		$("#mail").addClass("zoomOut");
 		$("#person").removeClass("zoomIn");
 		$("#person").addClass("zoomOut");
 	}
