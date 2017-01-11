@@ -148,7 +148,12 @@ ul.midnav li a:hover{opacity:0.5;}
 	flex-shrink: 0;
 	position:relative;
 }
-
+a{
+	transition: 0.3s;
+}
+a:hover{
+	opacity:0.3;
+}
 .about{
 	font-family: sans-serif;
 	position:fixed;
