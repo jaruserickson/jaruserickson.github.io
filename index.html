@@ -11,6 +11,10 @@
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 	<script src="randompic.js"></script>
+	<!--<script src="https://cdnjs.com/libraries/fullPage.js"></script>-->
+	<script src="jquery.fullPage.js"></script>
+	<script src="interaction.js"></script>
+	<link rel="stylesheet" href="jquery.fullPage.css"/>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,36 +22,48 @@
 
 <body>
 	<!-- TODO
-		- mail icon somewhere
+		- just need to optimize animate.css
 	-->
 	<div id="load"></div>
-	<div id="content">
-		<div id="contact" class="animated flipInX">
-			<span id="me">
-				<img id="profile" alt="About me!"/>
-			</span>
-			<span id="person" class="animated zoomOut">
-				<img src="img/person.png"/>
-			</span>
-			<a id="mail" href="mailto:jacob.erickson@mail.utoronto.ca" class="animated zoomOut">
-				<img src="img/mail.png"/>
-			</a>
-		</div>
-		<div id="blurb" class="animated zoomOut">
-				<div class="about">Hey, I'm an 18 year old athlete, photographer, student, and programmer from Calgary, AB, currently living in Toronto, ON. </br></br>  I've been doing graphic design in Photoshop and Gimp, making videos for YouTube and taking photos since I was around 12, and programming  since I was around 13! </br></br>  I've been programming in Java since 2012, Python since 2014, and HTML/CSS, JavaScript and Swift since early 2016. </br></br>  I'm an avid fan the Calgary Flames and you'll very often find me watching a hockey game whenever I can find time. (I'm also a pretty big fan of socks.)</br></br> I'm in my second year at the University of Toronto specializing in Computer Science, with a focus in AI.</br></br> Check out my Resume, Github, LinkedIn, and Instagram!</br><center style="margin-top:9px;margin-left:-4px;font-size:10px;opacity:0.6">Click anywhere to get rid of this box.</center>
-				</div>
+	<div id="fullpage">
+		<div class="section">
+		<div id="content">
+			<div id="contact" class="animated flipInX">
+				<span id="me">
+					<img id="profile" alt="About me!"/>
+				</span>
+				<span id="person" class="animated zoomOut">
+					<img src="img/person.png"/>
+				</span>
+				<a id="mail" href="mailto:jacob.erickson@mail.utoronto.ca" class="animated zoomOut">
+					<img src="img/mail.png"/>
+				</a>
 			</div>
-		<center id="links">
-			<h1>JACOB ERICKSON</h1>
-			<ul class="midnav" id="myMidnav">
-					<li><a target="_blank" href="pdf/jacoberickson_resume2016_17.pdf"><img src="img/about.png" alt="Resume" title="Resume" style="width:24px;height:auto;"/></a></li>
-					<li><a target="_blank" href="https://github.com/jaruserickson"><img src="img/github.png" alt="Github" title="Github" style="width:24px;height:auto;"/></a></li>
-					<li><a target="_blank" href="https://www.linkedin.com/in/jaruserickson"><img src="img/linkedin.png" title="LinkedIn" alt="LinkedIn" style="width:24px;height:auto;"/></a></li>
-					<li><a target="_blank" href="https://www.instagram.com/jaruserickson/"><img src="img/insta.png" alt="Photos" title="Photos" style="width:24px;height:auto;"/></a></li>
-			</ul>
-		</center>
+			<div id="blurb" class="animated zoomOut">
+					<div class="about">Hey, I'm an 18 year old athlete, photographer, student, and programmer from Calgary, AB, currently living in Toronto, ON. </br></br>  I've been doing graphic design in Photoshop and Gimp, making videos for YouTube and taking photos since I was around 12, and programming  since I was around 13! </br></br>  I've been programming in Java since 2012, Python since 2014, and HTML/CSS, JavaScript and Swift since early 2016. </br></br>  I'm an avid fan the Calgary Flames and you'll very often find me watching a hockey game whenever I can find time. (I'm also a pretty big fan of socks.)</br></br> I'm in my second year at the University of Toronto specializing in Computer Science, with a focus in AI.</br></br> Check out my Resume, Github, LinkedIn, and Instagram!</br><center style="margin-top:9px;margin-left:-4px;font-size:10px;opacity:0.6">Click anywhere to get rid of this box.</center>
+					</div>
+				</div>
+			<center id="links">
+				<h1>JACOB ERICKSON</h1>
+				<ul class="midnav" id="myMidnav">
+						<li><a target="_blank" href="pdf/jacoberickson_resume2016_17.pdf"><img src="img/about.png" alt="Resume" title="Resume" style="width:24px;height:auto;"/></a></li>
+						<li><a target="_blank" href="https://github.com/jaruserickson"><img src="img/github.png" alt="Github" title="Github" style="width:24px;height:auto;"/></a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/jaruserickson"><img src="img/linkedin.png" title="LinkedIn" alt="LinkedIn" style="width:24px;height:auto;"/></a></li>
+						<li><a target="_blank" href="https://www.instagram.com/jaruserickson/"><img src="img/insta.png" alt="Photos" title="Photos" style="width:24px;height:auto;"/></a></li>
+				</ul>
+			</center>
+		</div>
+		<div id="background"></div>
+		</div>
+		<div class="section" data-anchor="projects">
+			<div id="projects">
+				<h1>PROJECTS</h1>
+				<!--<img id="projpic" src="img/projpic.png"/>-->
+				<img id="ytmusic" src="img/banner.png"/>
+				<img id="website" src="favicon.png"/>
+			</div>
+		</div>
 	</div>
-	<div id="background"></div>
 
 	<script src="loadscreen.js"></script>
 	<script src="transitions.js"></script>

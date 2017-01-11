@@ -3,7 +3,7 @@ html{
 	background: #00e699;
     background: -webkit-linear-gradient(45deg, #4251C2, #00ffff);
     background: -o-linear-gradient(45deg, #4251C2, #00ffff);
-    background: -moz-linear-gradient(45deg, #4251C2, #00ffff); 
+    background: -moz-linear-gradient(45deg, #4251C2, #00ffff);
     background: linear-gradient(45deg, #4251C2, #00ffff);
 }
 
@@ -26,7 +26,7 @@ body{
 	    -ms-flex-pack: center;
 	        justify-content: center;
     flex-shrink: 0;
-    
+
 	height: 100%;
 	font-family: 'Miriam Libre', sans-serif;
 	margin: 0;
@@ -85,6 +85,49 @@ ul.midnav li a:hover{opacity:0.5;}
 	z-index:900;
 }
 
+#para{
+	font-family: sans-serif;
+	font-size:12px;
+}
+
+#projpic{
+	width:100px;
+	height:auto;
+}
+
+#projects{
+	background-color:rgba(255,255,255,0.3);
+	/*background: url(img/bg.png) 45% 50%;*/
+	width:100%;
+	height:500px;
+	z-index:900;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+#ytmusic{
+	height:100px;
+	width:auto;
+	cursor:pointer;
+}
+#website{
+	width:100px;
+	height:auto;
+	cursor:pointer;
+}
 #contact{
 	display: -webkit-box;
     display: -webkit-flex;
