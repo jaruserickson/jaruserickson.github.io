@@ -1,10 +1,13 @@
 //bug report
 	//just css3's transform perspective blurring children problem in saf
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        anchors:["projects"]
+    });
+});
 
 var flag = true; //if flag is up then the about blurb is down
 $("#blurb").hide(); //so interaction will not be broken
-
-//for some reason this all works in safari when i set opacity after fading
 
 //this jquery is so messy
 $(document).on('click touchstart', function(e) { //on document click
@@ -29,10 +32,10 @@ $(document).on('click touchstart', function(e) { //on document click
     	$('#contact').addClass("flipInX");
 
     	if (!flag) { //resetting animations after click
-    	$("#person").removeClass("zoomIn");
-    	$("#person").addClass("zoomOut");
-    	$("#mail").removeClass("zoomIn");
-    	$("#mail").addClass("zoomOut");
+	    	$("#person").removeClass("zoomIn");
+	    	$("#person").addClass("zoomOut");
+	    	$("#mail").removeClass("zoomIn");
+	    	$("#mail").addClass("zoomOut");
    		}
 
     	$("#blurb").removeClass("zoomIn");

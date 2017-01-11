@@ -154,6 +154,24 @@ a{
 a:hover{
 	opacity:0.3;
 }
+#arrow{
+	width:50px;
+	height:auto;
+	opacity:0.7;
+	position:absolute;
+	bottom:-10px;
+	margin-left:-26px;
+}
+#notif{ /*this is part of the "help" part of the website to be added*/
+	font-family:sans-serif;
+	font-size:12px;
+	font-style:none;
+	bottom:0;
+	display:none;
+	position:absolute;
+	opacity:0.7;
+	color:black;
+}
 .about{
 	font-family: sans-serif;
 	position:fixed;

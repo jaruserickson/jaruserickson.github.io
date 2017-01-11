@@ -10,6 +10,13 @@ document.onreadystatechange = function () {
         		$("#load").fadeOut();
             	$("#profile").addClass("animated zoomIn");
             	$("#links").addClass("animated fadeInUp");
+                $("#arrow").addClass("animated fadeInUp")
+                setTimeout(function(){
+                    $("#arrow").removeClass("fadeInUp");
+                    $("#arrow").addClass("animated bounce");
+                    $("#notif").addClass("animated bounce");
+                },800);
         		},1000);
+
  		}
 }
