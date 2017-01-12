@@ -2,7 +2,7 @@
 	//just css3's transform perspective blurring children problem in saf
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors:["projects"]
+        anchors:["work"]
     });
 });
 
