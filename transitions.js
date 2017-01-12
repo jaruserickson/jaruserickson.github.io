@@ -1,11 +1,11 @@
 //bug report
 	//just css3's transform perspective blurring children problem in saf
-/*$(document).ready(function() {
+$(document).ready(function() {
     $('#fullpage').fullpage({
         anchors:["projects"]
     });
 });
-*/
+
 var flag = true; //if flag is up then the about blurb is down
 $("#blurb").hide(); //so interaction will not be broken
 
