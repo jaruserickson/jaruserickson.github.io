@@ -40,6 +40,7 @@ body{
     display: flex;
 	list-style-type:none;
 	margin-left:-38px;
+	margin-top:-10px;
 }
 
 ul.midnav li a{
