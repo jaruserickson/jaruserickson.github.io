@@ -119,16 +119,12 @@ ul.midnav li a:hover{opacity:0.5;}
 	    -ms-flex-pack: center;
 	        justify-content: center;
 }
-#ytmusic{
+.proj{
 	height:100px;
 	width:auto;
 	cursor:pointer;
 }
-#website{
-	width:100px;
-	height:auto;
-	cursor:pointer;
-}
+
 #contact{
 	display: -webkit-box;
     display: -webkit-flex;
