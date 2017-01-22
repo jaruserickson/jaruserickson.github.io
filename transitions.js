@@ -36,8 +36,6 @@ $(window).bind('hashchange', function(){
 	}
 });
 
-
-
 //jquery for about click
 $(document).on('click touchstart', function(e) { //on document click
     if ($(e.target).closest('#person').length) {
