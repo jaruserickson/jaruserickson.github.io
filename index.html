@@ -23,10 +23,10 @@
 <body>
 	<!-- TODO
 		- just need to optimize animate.css
-		- also need to add some indicator to mouse over the picture of me
+		- z-indexes are bonked up
 	-->
 	<div id="load"></div>
-	-<div id="fullpage">
+	<div id="fullpage">
 		<div class="section" data-anchor="main">
 		<div id="content">
 			<div id="contact" class="animated flipInX">
@@ -37,7 +37,7 @@
 					<img src="img/person.png"/>
 				</span>
 				<a id="mail" href="mailto:jacob.erickson@mail.utoronto.ca" class="animated zoomOut">
-					<img src="img/mail.png"/>
+					<img onclick="mail()" src="img/mail.png"/>
 				</a>
 			</div>
 			<div id="blurb" class="animated zoomOut">
@@ -54,7 +54,8 @@
 				</ul>
 			</center>
 
-			<p id="notif">swipe down for more</p>
+			<p id="help">hover over me for more!</p>
+			<p id="notif">swipe down for projects!</p>
 			<a href="#work">
 				<img id="arrow" src="img/arrow.png"/>
 			</a>
@@ -74,6 +75,8 @@
 		</div>
 
 	</div>
+
+	<p id="mailpop">jacob.erickson@mail.utoronto.ca</p>
 
 	<script src="loadscreen.js"></script>
 	<script src="transitions.js"></script>

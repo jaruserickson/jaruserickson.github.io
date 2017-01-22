@@ -153,9 +153,11 @@ ul.midnav li a:hover{opacity:0.5;}
 	        justify-content: center;
 	flex-shrink: 0;
 	position:relative;
+	z-index:1000;
 }
 a{
 	transition: 0.3s;
+	cursor:pointer;
 }
 a:hover{
 	opacity:0.3;
@@ -168,15 +170,31 @@ a:hover{
 	bottom:-10px;
 	margin-left:-26px;
 }
-#notif{ /*this is part of the "help" part of the website to be added*/
-	font-family:sans-serif;
+#notif{
 	font-size:12px;
 	font-style:none;
 	bottom:0;
 	display:none;
-	position:absolute;
+	position:relative;
 	opacity:0.7;
-	color:black;
+	margin-top:405px;
+}
+#help{
+	z-index:0;
+	font-size:12px;
+	display:none;
+	margin-top:-450px;
+	opacity:0.7;
+	position:relative;
+}
+#mailpop{
+	background-color:rgba(255,255,255,0.3);
+	border-radius:10px;
+	padding:10px;
+	position:fixed;
+	z-index:0;
+	font-size:14px;
+	top:15px;
 }
 .about{
 	font-family: sans-serif;
@@ -198,7 +216,6 @@ a:hover{
 	margin-bottom:110px;
 	margin-right:70px;
 	z-index:1150;
-	cursor: auto;
 }
 
 #person img{

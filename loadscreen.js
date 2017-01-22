@@ -14,7 +14,6 @@ document.onreadystatechange = function () {
                 setTimeout(function(){
                     $("#arrow").removeClass("fadeInUp");
                     $("#arrow").addClass("animated bounce");
-                    $("#notif").addClass("animated bounce");
                 },800);
         		},1000);
 
