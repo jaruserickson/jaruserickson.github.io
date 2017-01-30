@@ -13,7 +13,7 @@ document.onreadystatechange = function () {
                 $("#arrow").addClass("animated fadeInUp")
                 setTimeout(function(){
                     $("#arrow").removeClass("fadeInUp");
-                    $("#arrow").addClass("animated bounce");
+                    $("#arrow").addClass("animated tada");
                 },800);
         		},1000);
 
